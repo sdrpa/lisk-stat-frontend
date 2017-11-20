@@ -1,0 +1,41 @@
+@import './footer.scss';
+@import './react-table.scss';
+
+.container-fluid {
+   background: #fefefe;
+   font-family: 'Lato', sans-serif;
+   padding: 2em;
+}
+
+.header {
+   color: #fefefe;
+   background-color: #292e33;
+   font-size: 120%;
+   padding: 0.5em 1em;
+
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1030;
+
+   .list-inline {
+      margin: 0;
+
+      .list-inline-item:not(:last-child) {
+         padding-right: 1em;
+      }
+   }
+}
+
+.first {
+   padding-top: 5em;
+}
+
+.text-strong {
+   font-weight: 600;
+}
+
+.text-muted-less {
+   color: #ccc;
+}

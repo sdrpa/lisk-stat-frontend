@@ -1,0 +1,25 @@
+$footer-height: 40px;
+
+html {
+   min-height: 100%;
+   position: relative;
+}
+
+body {
+   margin-bottom: $footer-height; /* Margin bottom by footer height */
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: $footer-height; /* Set the fixed height of the footer */
+   line-height: $footer-height; /* Vertically center the text */
+
+   li + li::before {
+      color: #999;
+      content: " | ";
+   }
+}
